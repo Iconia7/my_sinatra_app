@@ -20,23 +20,35 @@
       justify-content: center;
       align-items: center;
       text-shadow: 2px 2px 5px #000;
+      opacity: 50%%;
     }
     .hero h1 {
       font-size: 4rem;
       font-weight: bold;
       text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
+    .h2{
+      font-weight: bold;
+    }
     .dish-card {
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      overflow: hidden;
+    size: fixed;
+
     }
     .dish-card img {
       border-bottom: 2px solid #f8f9fa;
     }
+    .btn-primary{
+      background-color: red;
+
+    }
     .navbar-brand img {
       border-radius: 50%;
       object-fit: cover;
+    }
+    .navbar-brand{
+
     }
     footer {
       background-color: #343a40;
@@ -58,18 +70,18 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <strong class="navbar-brand" href="#">
         <img src="/images/Logo.jpeg" alt="Logo" width="50" height="50" class="me-2">
         Newton Delicacy
-      </a>
+      </strong>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <strong class="nav-item"><a class="nav-link" href="#menu">Menu</a></strong>
+          <strong class="nav-item"><a class="nav-link" href="/about">About Us</a></strong>
+          <strong class="nav-item"><a class="nav-link" href="/contact">Contact</a></strong>
         </ul>
         <form class="d-flex ms-3" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -86,7 +98,7 @@
 
   <!-- Introduction -->
   <div class="container text-center my-5">
-    <p class="lead">Experience the finest dining with a selection of dishes made from the freshest ingredients.</p>
+    <p class="lead">Experience the finest dining with a selection of Kenyan dishes made from the freshest farm ingredients and made with love with our able chefs.</p>
   </div>
 
   <!-- Gallery -->
@@ -95,81 +107,91 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish1.jpg" class="card-img-top" alt="Dish 1">
+          <img src="/images/ugali matumbo.jpg" class="card-img-top" alt="Dish 1">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 1</h5>
-            <p class="card-text">$12.99</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 1">Order Now</button>
+            <h5 class="card-title">Ugali Matumbo</h5>
+            <p class="card-text">Ksh. 130</p>
+            <button class="btn btn-primary order-btn" data-dish="Ugali Matumbo">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish2.jpg" class="card-img-top" alt="Dish 2">
+          <img src="/images/pilau.jpg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 2</h5>
-            <p class="card-text">$15.49</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 2">Order Now</button>
+            <h5 class="card-title">Pilau Beef</h5>
+            <p class="card-text">Ksh. 200</p>
+            <button class="btn btn-primary order-btn" data-dish="Pilau Beef">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish2.jpg" class="card-img-top" alt="Dish 2">
+          <img src="/images/ugali sukuma.jpg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 3</h5>
-            <p class="card-text">$15.49</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 3">Order Now</button>
+            <h5 class="card-title">Ugali Sukuma</h5>
+            <p class="card-text">Ksh. 100</p>
+            <button class="btn btn-primary order-btn" data-dish="Ugali Sukuma">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish2.jpg" class="card-img-top" alt="Dish 2">
+          <img src="/images/ugali omena.jpeg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 4</h5>
-            <p class="card-text">$15.49</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 4">Order Now</button>
+            <h5 class="card-title">Ugali Omena</h5>
+            <p class="card-text">Ksh. 140</p>
+            <button class="btn btn-primary order-btn" data-dish="Ugali Omena">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish2.jpg" class="card-img-top" alt="Dish 2">
+          <img src="/images/fries.jpg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 5</h5>
-            <p class="card-text">$15.49</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 5">Order Now</button>
+            <h5 class="card-title">Fries</h5>
+            <p class="card-text">Ksh. 120</p>
+            <button class="btn btn-primary order-btn" data-dish="Fries">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish2.jpg" class="card-img-top" alt="Dish 2">
+          <img src="/images/burger.jpg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 6</h5>
-            <p class="card-text">$15.49</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 6">Order Now</button>
+            <h5 class="card-title">Burger</h5>
+            <p class="card-text">Ksh. 200</p>
+            <button class="btn btn-primary order-btn" data-dish="Burger">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish2.jpg" class="card-img-top" alt="Dish 2">
+          <img src="/images/spagetti.jpg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 7</h5>
-            <p class="card-text">$15.49</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 7">Order Now</button>
+            <h5 class="card-title">Spaghetti</h5>
+            <p class="card-text">Ksh. 160</p>
+            <button class="btn btn-primary order-btn" data-dish="Spaghetti">Order Now</button>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card dish-card">
-          <img src="/images/dish3.jpg" class="card-img-top" alt="Dish 3">
+          <img src="/images/rice beans.jpg" class="card-img-top" alt="Dish 2">
           <div class="card-body text-center">
-            <h5 class="card-title">Dish 8</h5>
-            <p class="card-text">$9.99</p>
-            <button class="btn btn-primary order-btn" data-dish="Dish 8">Order Now</button>
+            <h5 class="card-title">Rice Beans</h5>
+            <p class="card-text">Ksh. 120</p>
+            <button class="btn btn-primary order-btn" data-dish="Rice Beans">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card dish-card">
+          <img src="/images/rice beef.jpg" class="card-img-top" alt="Dish 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Rice Beef</h5>
+            <p class="card-text">Ksh. 160</p>
+            <button class="btn btn-primary order-btn" data-dish="Rice Beef">Order Now</button>
           </div>
         </div>
       </div>
@@ -178,11 +200,11 @@
 
   <!-- Footer -->
   <footer class="mt-5">
-    <p>&copy; 2024 Newton Delicacy. All Rights Reserved.</p>
+    <strong>&copy; 2024 Newton Delicacy. All Rights Reserved.</strong>
     <div>
-      <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-      <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i> Twitter</a>
     </div>
   </footer>
 
@@ -191,12 +213,12 @@
     document.querySelectorAll('.order-btn').forEach(button => {
       button.addEventListener('click', () => {
         const dish = button.getAttribute('data-dish');
-        const quantity = prompt(`How many plates of ${dish} would you like to order?`);
+        const quantity = prompt(How many plates of ${dish} would you like to order?);
         if (quantity) {
           const notification = document.createElement('div');
           notification.className = 'alert alert-success position-fixed top-0 end-0 m-3';
           notification.style.zIndex = 1050;
-          notification.textContent = `Thank you for ordering ${quantity} plate(s) of ${dish}!`;
+          notification.textContent = Thank you for ordering ${quantity} plate(s) of ${dish}!;
           document.body.appendChild(notification);
           setTimeout(() => notification.remove(), 3000);
         }
